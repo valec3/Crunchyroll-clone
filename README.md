@@ -6,7 +6,7 @@
    - [ ] Enviar correo de verificación después del registro
 
 - [ ] **Inicio de sesión**:
-   - [ ] Crear página de inicio de sesión
+   - [x] Crear página de inicio de sesión
    - [ ] Validar credenciales de inicio de sesión
    - [ ] Establecer sesión de usuario después del inicio de sesión
    - [ ] Manejar casos de olvido de contraseña
