@@ -17,8 +17,8 @@ export default function RootLayout({
 }>) {
     return (
         <Head>
-            <title>{metadata.title}</title>
-            <meta name="description" content={metadata.description} />
+            <title>{String(metadata.title)}</title>
+            <meta name="description" content={metadata.description ?? ''} />
         </Head>
     );
 }
