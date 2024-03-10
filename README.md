@@ -1,7 +1,7 @@
 ## ISSUES DEL PROYECTO
 - [ ] **Registro de usuario**:
    - [x] Crear página de registro
-   - [ ] Validar formato de correo electrónico y contraseña
+   - [x] Validar formato de correo electrónico y contraseña
    - [ ] Almacenar información de usuario en la base de datos
    - [ ] Enviar correo de verificación después del registro
 
