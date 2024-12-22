@@ -6,7 +6,7 @@ import TasksIcon from '@/assets/icons/TasksIcon';
 import Image from 'next/image';
 const Header = () => {
     return (
-        <header className="bg-dark w-screen text-white fixed top-0 left-0 right-0 h-[3.75rem]">
+        <header className="bg-dark w-screen text-white fixed top-0 left-0 right-0 h-[3.75rem] z-[999]">
             <div className="w-full h-full md:px-[5rem] xl:px-[98px] flex items-center justify-between">
                 <div className="h-full flex items-center gap-6">
                     <div>
