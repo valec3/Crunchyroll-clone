@@ -39,7 +39,7 @@ function Hero() {
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -57,6 +57,7 @@ function Hero() {
                             alt=""
                             className="object-cover aspect-video z-10"
                         />
+                        <InfoSerie sinopsis={item.sinopsis} />
                     </SwiperSlide>
                 ))}
                 <div className="autoplay-progress" slot="container-end">
@@ -67,7 +68,6 @@ function Hero() {
                 </div>
             </Swiper>
             <ThumbsSlider currentIdx={currentIndexSlide} />
-            <InfoSerie />
         </div>
     );
 }
