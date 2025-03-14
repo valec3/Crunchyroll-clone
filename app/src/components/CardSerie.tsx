@@ -1,8 +1,19 @@
-const CardSerie = ({ anime }) => {
+import Image from 'next/image';
+
+interface Anime {
+    title: string;
+    description: string;
+    genres: string[];
+    episodes: number;
+    score: number;
+    img: string;
+}
+
+const CardSerie = ({ anime }: { anime: Anime }) => {
     return (
         <article>
             <div>
-                <img
+                <Image
                     src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/d458b9695157881b8b257226a2f68bb3.jpg"
                     alt={anime.title}
                 />

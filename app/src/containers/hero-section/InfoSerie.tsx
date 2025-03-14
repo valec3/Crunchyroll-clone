@@ -1,10 +1,12 @@
+import Image from 'next/image';
+
 const InfoSerie = ({ sinopsis = 'nada' }) => {
     return (
         <div className=" absolute bottom-10 left-10 z-50 w-80">
             <div className="relative">
                 <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50 p-4 blur-lg -z-10"></div>
                 <div className="text-slate-50 flex flex-col gap-4 z-50">
-                    <img src="" alt="" />
+                    <Image src="" alt="" />
                     <div>
                         <span>14+</span>
                         <span>-Subtitulado</span>

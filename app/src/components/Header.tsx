@@ -1,3 +1,4 @@
+import React from 'react';
 import CrunchyrollIcon from '@/assets/icons/CrunchyrollIcon';
 import TriangleIcon from '@/assets/icons/TriangleIcon';
 import CrownIcon from '@/assets/icons/CrownIcon';
