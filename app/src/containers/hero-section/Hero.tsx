@@ -14,21 +14,21 @@ function Hero() {
     const progressCircle = useRef(null);
     const progressContent = useRef(null);
     const [currentIndexSlide, setCurrentIndexSlide] = useState(0);
-    const onAutoplayTimeLeft = (
-        swiper: any,
-        time: number,
-        progress: number,
-    ) => {
-        if (progressCircle.current) {
-            progressCircle.current.style.setProperty(
-                '--progress',
-                `${1 - progress}`,
-            );
-        }
-        if (progressContent.current) {
-            progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-        }
-    };
+    // const onAutoplayTimeLeft = (
+    //     swiper: any,
+    //     time: number,
+    //     progress: number,
+    // ) => {
+    //     if (progressCircle.current) {
+    //         progressCircle.current.style.setProperty(
+    //             '--progress',
+    //             `${1 - progress}`,
+    //         );
+    //     }
+    //     if (progressContent.current) {
+    //         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    //     }
+    // };
     console.log(currentIndexSlide);
     return (
         <div className="relative">
@@ -47,7 +47,7 @@ function Hero() {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                onAutoplayTimeLeft={onAutoplayTimeLeft}
+                // onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className="mySwiper z-10"
             >
                 {dataHero.map((item, index) => (
